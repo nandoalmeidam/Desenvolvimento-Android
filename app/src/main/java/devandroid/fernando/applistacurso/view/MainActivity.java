@@ -24,5 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Criando o objeto
         pessoa = new Pessoa();
+        // Atribuir conteúdo, dados, valores para o objeto
+        // Conforme o teu modelo TEMPLATE
+        pessoa.setPrimeiroNome("Mickey");
+        pessoa.setSobrenome("Mouse");
+        pessoa.setCursoDesejado("Java");
+        pessoa.setTelefoneContato("11 96351-5333");
     }
 }
