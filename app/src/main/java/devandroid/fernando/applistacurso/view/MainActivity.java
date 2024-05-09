@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
     // Declarando o objeto pessoa da Classe Pessoa
     Pessoa pessoa;
+    Pessoa outraPessoa;
+
+    String dadosPessoa;
+    String dadosOutraPessoa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +34,33 @@ public class MainActivity extends AppCompatActivity {
         pessoa.setSobrenome("Mouse");
         pessoa.setCursoDesejado("Java");
         pessoa.setTelefoneContato("11 96351-5333");
+
+        outraPessoa = new Pessoa();
+        outraPessoa.setPrimeiroNome("Harry");
+        outraPessoa.setSobrenome("Potter");
+        outraPessoa.setCursoDesejado("Feitiço");
+        outraPessoa.setTelefoneContato("11 99735-6123");
+
+        dadosPessoa = "Primeiro Nome: ";
+        dadosPessoa += pessoa.getPrimeiroNome();
+        dadosPessoa += "Sobrenome: ";
+        dadosPessoa += pessoa.getSobrenome();
+        dadosPessoa += "Curso Desejado: ";
+        dadosPessoa += pessoa.getCursoDesejado();
+        dadosPessoa += "Telefone de Contato: ";
+        dadosPessoa += pessoa.getTelefoneContato();
+
+        dadosOutraPessoa = "Primeiro Nome: ";
+        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
+        dadosOutraPessoa += "Sobrenome: ";
+        dadosOutraPessoa += outraPessoa.getSobrenome();
+        dadosOutraPessoa += "Curso Desejado: ";
+        dadosOutraPessoa += outraPessoa.getCursoDesejado();
+        dadosOutraPessoa += "Telefone de Contato: ";
+        dadosOutraPessoa += outraPessoa.getTelefoneContato();
+
+
+        int parada = 0;
+
     }
 }
