@@ -1,6 +1,7 @@
 package devandroid.fernando.applistacurso.view;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setCursoDesejado("Feitiço");
         outraPessoa.setTelefoneContato("11 99735-6123");
 
+/*
         dadosPessoa = "Primeiro Nome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
         dadosPessoa += "Sobrenome: ";
@@ -58,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
         dadosOutraPessoa += outraPessoa.getCursoDesejado();
         dadosOutraPessoa += "Telefone de Contato: ";
         dadosOutraPessoa += outraPessoa.getTelefoneContato();
+*/
 
-
-        int parada = 0;
-
+        Log.i("POOAndroid",pessoa.toString());
+        Log.i("POOAndroid",outraPessoa.toString());
     }
 }
