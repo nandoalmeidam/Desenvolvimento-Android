@@ -19,9 +19,6 @@ public class MainActivity extends AppCompatActivity {
     Pessoa pessoa;
     Pessoa outraPessoa;
 
-    String dadosPessoa;
-    String dadosOutraPessoa;
-
     EditText editPrimeiroNome;
     EditText editSobrenome;
     EditText editCursoDesejado;
@@ -35,15 +32,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
-        // Criando o objeto
-        pessoa = new Pessoa();
-        // Atribuir conteúdo, dados, valores para o objeto
-        // Conforme o teu modelo TEMPLATE
-        /*pessoa.setPrimeiroNome("Mickey");
-        pessoa.setSobrenome("Mouse");
-        pessoa.setCursoDesejado("Java");
-        pessoa.setTelefoneContato("11 96351-5333");*/
 
         outraPessoa = new Pessoa();
         outraPessoa.setPrimeiroNome("Harry");
@@ -98,27 +86,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-/*
-        dadosPessoa = "Primeiro Nome: ";
-        dadosPessoa += pessoa.getPrimeiroNome();
-        dadosPessoa += "Sobrenome: ";
-        dadosPessoa += pessoa.getSobrenome();
-        dadosPessoa += "Curso Desejado: ";
-        dadosPessoa += pessoa.getCursoDesejado();
-        dadosPessoa += "Telefone de Contato: ";
-        dadosPessoa += pessoa.getTelefoneContato();
 
-        dadosOutraPessoa = "Primeiro Nome: ";
-        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
-        dadosOutraPessoa += "Sobrenome: ";
-        dadosOutraPessoa += outraPessoa.getSobrenome();
-        dadosOutraPessoa += "Curso Desejado: ";
-        dadosOutraPessoa += outraPessoa.getCursoDesejado();
-        dadosOutraPessoa += "Telefone de Contato: ";
-        dadosOutraPessoa += outraPessoa.getTelefoneContato();
-*/
-
-        Log.i("POOAndroid",pessoa.toString());
-        Log.i("POOAndroid",outraPessoa.toString());
+        Log.i("POOAndroid", pessoa.toString());
+        Log.i("POOAndroid", outraPessoa.toString());
     }
 }
